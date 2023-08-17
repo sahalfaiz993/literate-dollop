@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="addproduct.css">
+    <script src="https://kit.fontawesome.com/4d548a4e76.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="signup.css"> -->
+</head>
+<style>
+    .loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+<body>
+    <!-- <div class="loader"></div> -->
+
+    <div class="alert-box">
+        <!-- <img src="img/error.png"  class="alert-img" alt=""> -->
+        <p class="alert-msg"></p>
+    </div>
+    <img src="img/dark-logo.png" class="logo" alt="">
+
+<div class="form">
+    <h1>product-name</h1>
+    <input type="text" id="product-name" name="product-name" placeholder="Enter product name">
+
+    <h1>Short details</h1>
+    <input type="text" id="product-name" name="product-name" placeholder="Enter product name">
+    <h1>Description</h1>
+    <textarea  id="des" placeholder="Detail-Description"></textarea>
+<br>
+<br>
+    <!-- product image -->
+    <div class="product-info">
+        <div class="product-image"><p class="text">Product image</p></div>
+        <div class="upload-image-sec">
+        <br>
+        <br>
+            <p class="text"><i class="fa-solid fa-camera"></i>upload image</p>
+            <div class="upload-catalouge">
+                <input type="file" class="fileupload" id="first-file-upload-btn" hidden>
+                <label for="first-file-upload-btn" class="upload-image"></label>
+                <input type="file" class="fileupload" id="second-file-upload-btn" hidden>
+                <label for="seond-file-upload-btn" class="upload-image"></label>
+                <input type="file" class="fileupload" id="third-file-upload-btn" hidden>
+                <label for="third-file-upload-btn" class="upload-image"></label>
+                <input type="file" class="fileupload" id="forth-file-upload-btn" hidden>
+                <label for="forth-file-upload-btn" class="upload-image"></label>
+            </div>
+        </div>
+        <div class="select-sizes">
+            <p class="text">size available</p>
+            <div class="sizes">
+                <input type="checkbox" class="size-checkbox" id="xs" value="xs">
+                <input type="checkbox" class="size-checkbox" id="s" value="s">
+                <input type="checkbox" class="size-checkbox" id="m" value="m">
+                <input type="checkbox" class="size-checkbox" id="xxl" value="xxl">
+                <input type="checkbox" class="size-checkbox" id="xxxl" value="xxxl">
+            
+            </div>
+        </div>
+    </div>
+    <div class="product-price">
+        <input type="number" id="actal-price" placeholder="actual-price">
+        <input type="number" id="discount-price" placeholder="discount-price">
+        <input type="number" id="selll-price" placeholder="selling-price">
+    </div>
+    <input type="number" itemid="stock" min="20" placeholder="item stock in (minimum 20)">
+<br>
+<br>
+<h1>Description</h1>
+<textarea name="tags" id="tags" cols="50" rows="10" placeholder="Enter catagories here, blue jeans , wtches in 0ther varities"></textarea>
+   <br>
+   <input type="checkbox" class="checkbox" id="tac" checked> 
+   <label for="tac">clothing take 30% from your total sell</label>
+   <div class="button">
+    <button class="btn" id="add-btn">add product</button>
+    <button class="btn" id="save-btn">Saft draft</button>
+   </div>
+</div>
+    <script type="module" src="addproduct.js"></script>
+</body>
+</html>

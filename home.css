@@ -1,0 +1,555 @@
+@import "home.css";
+
+.navbar {
+  background-color: white;
+  font-family: 'Arbutus Slab';
+  font-size: 14px;
+}
+
+.navbar {
+  position: relative;
+  transition: border-bottom-color 0.3s ease-in-out;
+}
+
+.navbar:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #004d00;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar:hover {
+  border-bottom-color: #004d00;
+}
+
+.navbar:hover:before {
+  transform: scaleX(1);
+}
+
+/* Navbar styles and hover styles start*/
+
+
+
+/* Brand or logo (image) styles and hover styles start*/
+.logo-img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-img:hover {
+  transform: scale(1.1);
+  border: 2px solid #000;
+  animation: border-animation 3ms infinite;
+}
+
+@keyframes border-animation {
+  0% {
+    border-color: #b3ffb3;
+  }
+
+  25% {
+    border-color: #66ff66;
+  }
+
+  50% {
+    border-color: #00cc00;
+  }
+
+  75% {
+    border-color: #006600;
+  }
+
+  100% {
+    border-color: #001a00;
+  }
+}
+
+/* Brand or logo (image) styles and hover styles end*/
+
+
+
+/* Navbar list (Home, About, Vision, Contact) styles and hover starts*/
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-right: 15px;
+  position: relative;
+  padding-top: 12px;
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.5s ease-in-out;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+.nav-link:hover:before {
+  width: 100%;
+  animation: underline 0.6s linear;
+}
+
+@keyframes underline {
+  0% {
+    left: 0;
+    width: 0;
+  }
+
+  25% {
+    left: 0;
+    width: 100%;
+  }
+
+  50% {
+    left: 100%;
+    width: 0;
+  }
+
+  75% {
+    left: 0;
+    width: 100%;
+  }
+
+  100% {
+    left: 0;
+    width: 100%;
+  }
+}
+
+/* Navbar list (Home, About, Vision, Contact) styles and hover starts*/
+
+
+
+/* search box styles and hover styles starts */
+.search-form input[type="text"]:hover,
+.search-form input[type="text"]:focus {
+  animation: border-animation 2s infinite;
+}
+
+@keyframes border-animation {
+  0% {
+    border-color: #004d00;
+    box-shadow: 0 0 5px #004d00;
+  }
+
+  50% {
+    border-color: #00cc00;
+    box-shadow: 0 0 5px #00cc00;
+  }
+
+  100% {
+    border-color: #004d00;
+    box-shadow: 0 0 5px #004d00;
+  }
+}
+
+.search-form input[type="text"]:hover::placeholder {
+  font-size: 14px;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.search-wrapper {
+  position: relative;
+}
+
+.search-button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.search-button i {
+  color: #000;
+}
+
+.search-form input[type="text"] {
+  padding-right: 30px;
+}
+
+.search-button i:hover {
+  transform: scale(1.2);
+}
+
+/* search box styles and hover styles ends */
+
+
+
+/* User profile or dropdown styles and hover styles starts */
+.fa-regular {
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  background-color: black;
+}
+
+.dropdown-menu.dropdown-menu-center {
+  left: 40% !important;
+  right: auto !important;
+  transform: translateX(-50%) !important;
+}
+
+.dropdown .btn:hover {
+  transform: scale(1.1);
+}
+
+.dropdown-item {
+  font-family: 'Arbutus Slab';
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+  transform: scale(1.1);
+}
+
+.dropdown-divider {
+  border: none;
+  height: 2px;
+  background-color: #000;
+  margin: 0.5rem 0;
+  opacity: 0.5;
+}
+
+/* User profile or dropdown styles and hover styles starts */
+
+
+
+/* Media query styles for 576 px size user window starts */
+@media (max-width: 576px) {
+  .nav-item {
+    padding-left: 10%;
+  }
+
+  .dropdown {
+    padding-left: 8%;
+  }
+
+  .dropdown-menu.dropdown-menu-center {
+    left: 30% !important;
+    right: 0 !important;
+    transform: translateX(0) !important;
+  }
+}
+
+/* Media query styles for 576 px size user window ends */
+
+#image1 {
+  width: 100%;
+  height: 100%;
+  /* margin-top: ; */
+}
+
+.links-container {
+  width: 100px;
+  padding: 10px 10px;
+  margin: 15px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  border: 1px solid color(white);
+}
+
+.link {
+  text-transform: capitalize;
+  padding: 0px 10px;
+  margin: 0px 10px;
+  text-decoration: none;
+  opacity: 0.5;
+  transition: 5s;
+  color: #000 brown blueviolet;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.link:hover {
+  opacity: 0.5;
+  color: #000;
+}
+
+.hero-section {
+  width: 100%;
+  height: calc(100vh - 120px);
+  background-image: url(./img/header.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section .logo {
+  height: 150px;
+  display: block;
+  margin: auto;
+}
+
+.hero-section .sub-heading {
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 300px;
+}
+
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0px;
+}
+
+.product-category {
+  padding: 0 10vw;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 48px;
+}
+
+.product-container {
+  padding: 1 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 560px;
+  margin: 49px;
+  /* margin-right: 49px 0; */
+
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+
+}
+
+.product-thumb {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.discount-tag {
+  position: absolute;
+  background: wheat;
+  padding: 5px;
+  border-radius: 5px;
+  color: blue;
+  right: 10px;
+  top: 10px;
+  text-transform: capitalize;
+
+}
+
+.card-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: white;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.product-card:hover .card-btn {
+  opacity: 1;
+}
+
+.product-info {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.product-brand {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.prduct-short-des {
+  width: 100%;
+  height: 20px;
+  height: 40px;
+  line-height: 100px;
+  overflow: hidden;
+  /* margin-bottom: 10px; */
+  opacity: 0.5;
+  /* margin-top: 30px; */
+  text-transform: capitalize;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.actual-price {
+  margin-left: 20px;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0)0%, white 100%);
+  cursor: pointer;
+  z-index: 8;
+
+
+}
+
+.pre-btn {
+  left: 0%;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+
+a i {
+  transition: all 0.3s linear;
+}
+
+a:hover i {
+  transform: scale(1.5);
+}
+
+
+
+.facebook:hover {
+  color: blue;
+}
+
+.instagram:hover {
+  color: #e11d74;
+}
+
+.twitter:hover {
+  color: #00adb5;
+}
+
+
+
+.linkedin:hover {
+  color: #04009a;
+}
+
+#you:hover {
+  color: red;
+  scale: 1.1;
+
+}
+
+#github:hover {
+  color: black;
+  scale: 1.1;
+
+}
+
+.product-category {
+  font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #677767, #b37777d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-top: 10px;
+
+}

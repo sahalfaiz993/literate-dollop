@@ -1,0 +1,166 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+
+  
+}  
+.logo{
+    margin: 20px auto 50px;
+    display: block;
+  padding:0 20vw ;
+  filter: brightness(120%);
+   filter: contrast(120%);
+   filter: drop-shadow(10px 10px 10px green);
+/* filter: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); */
+  transition: transform ease 0.5s, box-shadow ease 0.5s;
+  
+}
+
+  textarea{
+    background-color:white;
+    color: black;
+    padding: 10px 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .form {
+    width: 300%;
+    margin: 100px ;
+    padding: 0px;
+    
+  }
+  h1 {
+    display: block;
+    margin-bottom: 5px;
+    padding: 15px;
+    
+  }
+  input[type="text"] {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  
+
+.product-info{
+    width: 500px;
+    height: 1300px;
+    display: grid;
+    grid-template-columns: .55fr 1 25fr;
+    grid-gap: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.product-image{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+   grid-row: span 2;
+   border: 1px solid black;
+}
+.text{
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 500;
+    
+    color: black
+    
+}
+.upload-image-sec{
+background-color: wheat;
+border-radius: 10px;
+padding: 20px;
+color:white;
+border: 1px solid crimson;
+
+width: 100%;
+height: 300px;
+text-align: end;
+
+}
+.select-sizes{
+  background-color: wheat;
+border-radius: 10px;
+padding: 20px;
+color:white;
+border: 1px solid crimson;
+width: 100%;
+height: 300px;
+text-align: end;
+}
+.upload-catalouge{
+    width: 100;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-gap: 10px;
+}
+.upload-image{
+    width: 100%;
+    height: 100px;
+    background: gray;
+    cursor: pointer;
+    background-size: cover;
+}
+
+.upload-image:hover{
+    background: rgba(0, 0, 0 ,0.2);
+    background-size: cover;
+}
+.sizes{
+  margin-top: 30px;
+}
+.size-checkbox{
+  -webkit-appearance:none;
+  width: 100px;
+  height: 40px;
+  border-radius:5pox;
+  border: 1px solid gray;
+  color: black;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  position: relative;
+  color: brown;
+}
+.size-checkbox::after{
+  content: attr(value);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.size-checkbox:checked{
+  background: #383838;
+  color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+.product-price{
+  display: flex;
+  grid-template-columns: repeat(3,2fr);
+  grid-gap: 20px;
+}
+.product-price input{
+  margin: 0;
+}
+
+
+
+
+  
+

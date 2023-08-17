@@ -1,0 +1,33 @@
+#search-results{
+    width: 100%;
+    padding: 30px ;
+    display: block;
+    margin:  100px auto 30px ;
+    color: #33475b;
+    text-align: center;
+    height: 50px;
+  
+}
+#footer{
+    width: 100%;
+    /* padding: 30px ; */
+    margin:  50px;
+    height: 50px;
+    
+}
+.heading{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-bottom: 40px;
+    padding: 0 10vw;
+}
+.heading span{
+    font-weight: 700;
+    
+    
+}
+.heading a{
+    text-decoration: none;
+    color: blue;
+}
